@@ -1,0 +1,11 @@
+driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//i[contains(@class,'fa fa-align-justify')])[1]")).click();
+		driver.findElement(By.xpath("(//label[contains(text(),'HOTELS')])[1]")).click();
+		Set<String> allWindow = driver.getWindowHandles();
+		String main = (String) allWindow.toArray()[0];
+		System.out.print("\n main window handle code = " + allWindow.toArray()[0]);
+		Thread.sleep(3000);
+		String hotel = (String) allWindow.toArray()[1];
+		System.out.print("\n hotel window handle code = " + allWindow.toArray()[1]);
+		driver.switchTo().window(hotel);
