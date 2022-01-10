@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.321 s <<< FAILURE! - in TestSuite
+smokeTest.ActionExample.open  Time elapsed: 19.599 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: MicrosoftEdge=97.0.1072.55)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q2RM1HI', ip: '10.1.10.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61143}, msedge: {msedgedriverVersion: 97.0.1072.55 (ce3bf33648805..., userDataDir: C:\Users\admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 661cf47713eddedc11e3c238691129c7
+*** Element info: {Using=xpath, value=//img[contains(@src,'images/high_tatras_min.jpg')]}
+	at smokeTest.ActionExample.open(ActionExample.java:32)
+
+smokeTest.ActionExample.tearDown  Time elapsed: 19.798 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: MicrosoftEdge=97.0.1072.55)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q2RM1HI', ip: '10.1.10.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61143}, msedge: {msedgedriverVersion: 97.0.1072.55 (ce3bf33648805..., userDataDir: C:\Users\admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 661cf47713eddedc11e3c238691129c7
+	at smokeTest.ActionExample.tearDown(ActionExample.java:40)
+
