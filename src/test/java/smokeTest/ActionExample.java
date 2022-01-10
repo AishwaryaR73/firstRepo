@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -34,6 +35,9 @@ public class ActionExample {
 			Thread.sleep(3000);
 			act.dragAndDrop(source, target).build().perform();
 			// act.clickAndHold(target).moveToElement(source).release().build().perform();
+			Assert.assertTrue(driver.getTitle().contains("Google"));
+	
+	
 	}
 	@AfterClass
 	public void tearDown() {
