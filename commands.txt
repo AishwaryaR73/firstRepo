@@ -1,0 +1,11 @@
+git checkout master--->switched to the another branch
+touch jenkis.xml--->To create file in folder
+git inti-->initalization
+git status-->check status
+git add file-name.txt-->Add a file to the staging area
+git add -A--->Add all new and change files
+git commit -m "commit message"-->commit chnages message
+git rm -r file-name.txt -->remove a file
+git branch branch-name-->create a new branch
+git chcekout -b branch-name-->create a new branch and switch to ot
+git chcekout -b branch name-->Clone a remote branch and switch to it

@@ -1,0 +1,35 @@
+directory: C:\Program Files\SmartBear\SoapUI-5.6.1\bin\.
+command: cmd.exe /C testrunner.bat C:\Users\admin\Documents\APITesting-soapui-project.xml
+SoapUI 5.6.1 TestCase Runner
+
+
+https://en.wikipedia.org/api/rest_v1/page/summary/Pikachu
+
+.) add in your SOAPUI
+2.) Create Test Suite/TestCase/Add Get Request
+3.) Validate
+JSON path "Rhona Davidson"
+Status Code: 200
+ResponseTime: 1000msec
+
+
+demoAR@99
+
+-----------------------------------------------------
+
+pm.test("Verify the status code", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Verify the value", function () {
+    pm.expect(pm.response.text()).to.include("QA");
+    });
+pm.test("Response time is less than 2000ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(2000);
+});
+pm.test("Verify the job ", function () {
+    var data = pm.response.json();
+    pm.expect(data.job).to.eql("QA");
+});
+
+
