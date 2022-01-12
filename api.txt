@@ -44,4 +44,10 @@ npm install -g newman
 in postman tool export the collection and save the file extension is .json
 cmd:---->newman run file name 
 
+----->
+to get report
+cmd--->npm install newman-reporter-html
+newman run GetUser.postman_collection.json -r html
+in postman where file added the report gets generated
 
+URL--->https://learning.postman.com/docs/running-collections/using-newman-cli/integration-with-jenkins/
