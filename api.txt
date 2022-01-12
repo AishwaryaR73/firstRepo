@@ -33,3 +33,15 @@ pm.test("Verify the job ", function () {
 });
 
 
+
+
+
+
+
+Run the collections from cmd
+download newman
+npm install -g newman
+in postman tool export the collection and save the file extension is .json
+cmd:---->newman run file name 
+
+
